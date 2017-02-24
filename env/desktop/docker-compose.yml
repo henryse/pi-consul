@@ -1,0 +1,4 @@
+consul:
+  image: henryse/pi-consul:latest
+  command: agent -server -bootstrap -client 0.0.0.0 -advertise $DOCKER_IP -ui
+  network_mode: host
